@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AnnotationDemo</string>
+    <string name="txt_hello_world">Hello World!</string>
+    <string name="txt_hello_newers">Hello Newers!</string>
 </resources>
