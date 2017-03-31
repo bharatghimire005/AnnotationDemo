@@ -6,6 +6,7 @@ import android.support.annotation.ColorRes;
 import android.support.annotation.DimenRes;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
             switch (view.getId()) {
 
                 case R.id.btn_change_image:
-                    // changeImage(R.drawable.ic_adb);
-                    //  changeImage(R.string.app_name);
+                    //changeImage(R.drawable.ic_adb);
+                      //changeImage(R.string.app_name);
                     break;
                 case R.id.btn_change_text:
                     changeText(R.string.txt_hello_newers);
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void changeTextColorRes(@ColorRes int color) {
-        tvDemo.setTextColor(getResources().getColor(color));
+        tvDemo.setTextColor(ContextCompat.getColor(this, color));
     }
 
     private void changeText(@StringRes int text) {
