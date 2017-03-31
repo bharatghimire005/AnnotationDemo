@@ -1,6 +1,6 @@
 package com.dentor.annotationdemo;
 
-import android.support.annotation.MainThread;
+
 import android.support.annotation.UiThread;
 import android.support.annotation.WorkerThread;
 import android.support.v7.app.AppCompatActivity;
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     @UiThread
     private void changeTextColor() {
-        tvDemo.setText(R.string.txt_hello_newers);
+        tvDemo.setText("Hello newers world");
     }
 
     @WorkerThread
